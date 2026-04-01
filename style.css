@@ -656,12 +656,12 @@ nav .fa-solid {
     .header-text {
         position: relative;
         z-index: 2;
-        text-align: center;
+        text-align: left;
         width: 100%;
         max-width: 300px;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         margin: 0 auto;
     }
 
@@ -685,7 +685,8 @@ nav .fa-solid {
         display: inline-block;
         text-align: left;
         margin: 0;
-        min-width: 180px;
+        min-width: 0;
+        margin-left: 4px;
         width: auto;
         white-space: normal;
         overflow: visible;
@@ -693,17 +694,20 @@ nav .fa-solid {
 
     .changing-text span {
         position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 0;
+        width: 100%;
+        text-align: center;
+        transform: none;
         display: inline;
         white-space: nowrap;
     }
 
     .role-line {
         display: block;
-        margin-top: 5px;
-        text-align: center;
+        margin-top: 0;
+        text-align: left;
         position: relative;
+        transform: none;
     }
 
     .header-text .intro {
