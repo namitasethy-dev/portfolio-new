@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e7ce3e6b79.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Portfolio</a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="mobile-hero-img">
+                <div class="img-border">
+                    <img src="images/profile.png">
+                </div>
+            </div>
+            <div class="header-text">
+                <p>Hello,</p>
+                <h1>I'm Namita Sethy<br>And I'm a <span class="changing-text">
+                        <span>UI/UX Designer</span><span>Frontend Developer</span>
+                    </span>
+                </h1>
+                <!---hire me section--------->
+                <p class="intro">
+                    I turn ideas into beautiful digital experiences.From UI/UX design to frontend development,
+                    I make websites that are simple,responsive,and user-friendly.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn">Hire Me</a>
+                </div>
+            </div>
+            <div class="particles">
+                <div class="particle" style="top:10%; left:15%; width:6px; height:6px;"></div>
+                <div class="particle" style="top:30%; left:70%; width:8px; height:8px;"></div>
+                <div class="particle" style="top:60%; left:25%; width:5px; height:5px;"></div>
+                <div class="particle" style="top:50%; left:50%; width:10px; height:10px;"></div>
+                <div class="particle" style="top:80%; left:80%; width:7px; height:7px;"></div>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/picture-2.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a UI/UX Designer and Frontend Developer with a strong focus on creating clean, user-friendly,
+                        and visually engaging digital experiences.I combine design thinking with modern frontend
+                        technologies to turn ideas into intuitive, responsive interfaces.My goal is to build products
+                        that not only look great but feel effortless to use.I enjoy solving problems, improving user
+                        journeys, and bringing concepts to life through thoughtful design and development.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><span>Portfolio Website</span><br>Designed and developed my personal portfolio to
+                                showcase my work and skills.Focused on clean layout, responsive design, and smooth user
+                                experience. <br>
+                                <span>Tools & Tech</span>: HTML,CSS,JavaScript
+                            </li>
+                            <li><span>Vendor Data Management System</span><br>Created a web-based system for organizing
+                                and managing vendor information.Built features for vendor registration, detail updates,
+                                and quick data search.Designed a structured UI to ensure easy navigation and data
+                                handling. <br><span> Tools & Tech</span>: HTML,CSS,JavaScript,MySQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2017-2019</span><br>BCA</li>
+                            <li><span>2019-2021</span><br>Msc Computer science</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------services----------------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I design clean and modern websites that are easy to use and visually appealing. My focus is on
+                        simple layouts, clear navigation, and responsive designs that work smoothly on all devices.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I design user-friendly and visually appealing interfaces that focus on clarity,simplicity,and
+                        smooth interaction.My goal is to understand user needs and create layouts that guide them
+                        naturally through every step.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>I design modern and intuitive mobile app interfaces that are easy to navigate and visually
+                        appealing.My focus is on creating smooth user flows with clear layouts and balanced visuals.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------portfolio------------->
+    <div id="Portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.jpg">
+                    <div class="layer">
+                        <h3>Social Media</h3>
+                        <p>The app connects you to the talented people around the world.Download it from
+                            play store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.jpg">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Discover and enjoy music from talented artists around the world.Available on Play Store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-4.jpg">
+                    <div class="layer">
+                        <h3>Shopping App</h3>
+                        <p>Upgrade your shopping style with trending products delivered fast.Available on Play Store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!----contact---------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>sethynamita891@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>6371604146</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/namita-sethy-b340ab218/">
+                            <i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://t.me/soninami25"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                    <a href="CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Namita.All rights reserved</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = "https://script.google.com/macros/s/AKfycbxDZhf9SscEEcSbpg8Tbsr0R-PbK7DycvsHOfSWg7TlRjHGTTxfYjeee6l5b8wvegny/exec";
+        const form = document.forms["submit-to-google-sheet"];
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            fetch(scriptURL, {
+                method: "POST",
+                mode: "no-cors",
+                body: new FormData(form)
+            });
+
+            alert("Message sent successfully!");
+            form.reset();
+        });
+    </script>
+</body>
+
+</html>
