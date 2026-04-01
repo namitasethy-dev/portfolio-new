@@ -508,14 +508,20 @@ nav .fa-solid {
 
    @media only screen and (max-width: 600px) {
     #header {
-        background:linear-gradient(to bottom,rgba(255,0,79,0.7),rgba(0,0,0,1));       
+        background:linear-gradient(to bottom,rgba(255,0,79,0.7),rgba(0,0,0,1)); 
+        display: flex;      
         flex-direction: column;
-        position: relative;
+        align-items: center;
+        min-height: 100vh;
+        justify-content: center;
+        padding: 80PX 15PX 40px;
+        background-attachment: scroll;
+       /* position: relative;
         overflow: hidden;  
         padding-left: 10px;
         padding-right: 10px;
         padding-top: 90px;
-        padding-bottom: 40px;
+        padding-bottom: 40px;*/
         background-attachment: scroll;  
     }
     .mobile-hero-img{
@@ -557,14 +563,11 @@ nav .fa-solid {
         z-index: 2;
         text-align: center;
         width: 100%;
-        max-width: 320px;
-        gap: 6px;
+        max-width: 300px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0 auto;
-        margin-top: 10px;
-        transform: none;
+        margin: 0 auto;    
     }
     .header-text p:first-of-type {
     font-size: 25px;
@@ -576,19 +579,19 @@ nav .fa-solid {
    }
     .header-text h1 {
         font-size: 22px;
-        line-height: 1.4;
-        margin: 0;
+        line-height: 1.3;
+        margin-bottom: 15px;
     }
     .changing-text{
         display: inline-block;
         text-align: center;
-        margin: 5px;
-        width: 95%;
+        margin:0;
+        width: auto;
         white-space: normal;
         overflow: visible;
     }
     .changing-text span{
-        display: inline-block;
+        display: inline;
     }
 
     /*.intro {
@@ -603,8 +606,8 @@ nav .fa-solid {
         margin-top: 8px;
     }
     .hero-buttons {
-        /*justify-content: center;*/
-        margin-top: 5px;
+        justify-content: center;
+        margin-top: 10px;
     }
     .row{
         flex-direction: column;
