@@ -514,7 +514,7 @@ nav .fa-solid {
         align-items: center;
         min-height: 100vh;
         justify-content: center;
-        padding: 80PX 15PX 40px;
+        padding: 70PX 15PX 25px;
         background-attachment: scroll;
        /* position: relative;
         overflow: hidden;  
@@ -580,7 +580,7 @@ nav .fa-solid {
     .header-text h1 {
         font-size: 22px;
         line-height: 1.3;
-        margin-bottom: 15px;
+        margin-bottom: 5px;
     }
     .changing-text{
         display: inline-block;
@@ -600,10 +600,10 @@ nav .fa-solid {
     
     .header-text .intro{
         font-size: 15px;
-        line-height: 1.6;
+        line-height: 1.4;
         max-width: 280px;
         margin-bottom: 5px;
-        margin-top: 8px;
+        margin-top: 5px;
     }
     .hero-buttons {
         justify-content: center;
