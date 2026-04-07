@@ -30,10 +30,11 @@ body {
     width: 100%;
     height: 100vh;
     position: relative;
-    
+
 }
+
 .header-img {
-    position:absolute;
+    position: absolute;
     right: -4%;
     bottom: -12px;
     z-index: 1;
@@ -44,7 +45,7 @@ body {
     height: 98vh;
     object-fit: contain;
     filter: none;
-    filter: drop-shadow(0 0 20px rgba(0 ,255, 200, 0.3));
+    filter: drop-shadow(0 0 20px rgba(0, 255, 200, 0.3));
 }
 
 
@@ -546,7 +547,7 @@ nav ul li a:hover::after {
 
 .btn:hover {
     background: #00C9A7;
-   
+
 }
 
 /*------contact page------------*/
@@ -677,8 +678,8 @@ nav .fa-solid {
         padding: 45PX 15PX 15px;
         background-attachment: scroll;
     }
-    
-    .header-img{
+
+    .header-img {
         display: none;
         bottom: 0;
     }
@@ -696,7 +697,7 @@ nav .fa-solid {
         padding: 5px;
         border-radius: 50%;
         background: rgba(0, 255, 200, 0.12);
-        box-shadow: 0 0 25px rgba(0 ,255, 200, 0.25);
+        box-shadow: 0 0 25px rgba(0, 255, 200, 0.25);
     }
 
     .img-border img {
@@ -870,40 +871,44 @@ nav .fa-solid {
         font-size: 14px;
         text-align: left;
     }
-    .about-col-2 p {
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    word-break: break-word;
-    text-align: center;
-    padding: 0 10px;
-    max-width: 90%;
-    font-size: 15px;
-}
-    .tab-titles {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin-top: 20px;
-    background: #1a1a1a;
-    padding: 6px;
-    border-radius: 25px;
-}
 
-.tab-links {
-    flex: 1;
-    text-align: center;
-    font-size: 14px;
-    padding: 10px 0;
-    margin: 0; 
-    white-space: nowrap;
-}
-.tab-links.active-link {
-    background: #00C9A7;
-    color: #000;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 201, 167, 0.6);
-}
+    .about-col-2 p {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        word-break: break-word;
+        text-align: center;
+        padding: 0 10px;
+        max-width: 90%;
+        font-size: 15px;
+    }
+
+    .tab-titles {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 20px;
+        background: #1a1a1a;
+        padding: 6px;
+        border-radius: 25px;
+    }
+
+    .tab-links {
+        flex: 1;
+        text-align: center;
+        font-size: 14px;
+        padding: 10px 0;
+        margin: 0;
+        white-space: nowrap;
+    }
+
+    .tab-links.active-link {
+        background: #00C9A7;
+        color: #000;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 201, 167, 0.6);
+    }
+
     .contact-left,
     .contact-right {
         flex-basis: 100%;
